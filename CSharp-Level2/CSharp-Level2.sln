@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34408.163
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp-Level2", "CSharp-Level2.csproj", "{703C878E-8E1A-4F8D-A805-52919119EA82}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithFiles", "..\WorkingWithFiles\WorkingWithFiles.csproj", "{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RemoveWordsFromFile", "..\RemoveWordsFromFile\RemoveWordsFromFile.csproj", "{53C1C85A-12AF-4F94-9575-1A8BF3E56411}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordOccurrencesInFile", "..\WordOccurrencesInFile\WordOccurrencesInFile.csproj", "{0AC4FD7A-3ECA-4BCB-AA59-00013DC8B83E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQexercises", "..\LINQexercises\LINQexercises.csproj", "{71461E14-F517-46C1-B4FC-3EB7D0C9A330}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReflectionAPI", "..\ReflectionAPI\ReflectionAPI.csproj", "{BD1254B9-34A2-49EA-BA12-8799B115FAEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{703C878E-8E1A-4F8D-A805-52919119EA82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703C878E-8E1A-4F8D-A805-52919119EA82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703C878E-8E1A-4F8D-A805-52919119EA82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703C878E-8E1A-4F8D-A805-52919119EA82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53C1C85A-12AF-4F94-9575-1A8BF3E56411}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53C1C85A-12AF-4F94-9575-1A8BF3E56411}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53C1C85A-12AF-4F94-9575-1A8BF3E56411}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53C1C85A-12AF-4F94-9575-1A8BF3E56411}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AC4FD7A-3ECA-4BCB-AA59-00013DC8B83E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AC4FD7A-3ECA-4BCB-AA59-00013DC8B83E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AC4FD7A-3ECA-4BCB-AA59-00013DC8B83E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AC4FD7A-3ECA-4BCB-AA59-00013DC8B83E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71461E14-F517-46C1-B4FC-3EB7D0C9A330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71461E14-F517-46C1-B4FC-3EB7D0C9A330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71461E14-F517-46C1-B4FC-3EB7D0C9A330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71461E14-F517-46C1-B4FC-3EB7D0C9A330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1254B9-34A2-49EA-BA12-8799B115FAEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1254B9-34A2-49EA-BA12-8799B115FAEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1254B9-34A2-49EA-BA12-8799B115FAEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1254B9-34A2-49EA-BA12-8799B115FAEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A666CFAD-C550-4499-A453-AAF6AEFC169D}
+	EndGlobalSection
+EndGlobal

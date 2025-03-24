@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34408.163
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp-Level2", "CSharp-Level2.csproj", "{703C878E-8E1A-4F8D-A805-52919119EA82}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HashTable", "HashTable.csproj", "{703C878E-8E1A-4F8D-A805-52919119EA82}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithFiles", "..\WorkingWithFiles\WorkingWithFiles.csproj", "{E29D04CC-8F85-4F1D-BEBE-283E7ACBA02A}"
 EndProject
@@ -15,7 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQexercises", "..\LINQexe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReflectionAPI", "..\ReflectionAPI\ReflectionAPI.csproj", "{BD1254B9-34A2-49EA-BA12-8799B115FAEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{3335E6F3-C97A-4A5C-B2EB-37A26A8D5EED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExtensionMethods", "..\ExtensionMethods\ExtensionMethods.csproj", "{3335E6F3-C97A-4A5C-B2EB-37A26A8D5EED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventsAndDelegates", "..\EventsAndDelegates\EventsAndDelegates.csproj", "{8C12F8A8-3AEC-425F-8033-3FDCBAF1A34E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{3335E6F3-C97A-4A5C-B2EB-37A26A8D5EED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3335E6F3-C97A-4A5C-B2EB-37A26A8D5EED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3335E6F3-C97A-4A5C-B2EB-37A26A8D5EED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C12F8A8-3AEC-425F-8033-3FDCBAF1A34E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C12F8A8-3AEC-425F-8033-3FDCBAF1A34E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C12F8A8-3AEC-425F-8033-3FDCBAF1A34E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C12F8A8-3AEC-425F-8033-3FDCBAF1A34E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

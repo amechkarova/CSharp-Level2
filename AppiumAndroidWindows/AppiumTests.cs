@@ -2,10 +2,13 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Android;
 using OpenQA.Selenium.Appium.Enums;
-using OpenQA.Selenium.Appium.PageObjects;
 using OpenQA.Selenium.Appium.Service;
 using OpenQA.Selenium.Appium.Service.Options;
 using OpenQA.Selenium.Interactions;
+using System.Xml.Serialization;
+using OpenQA.Selenium.Interactions.Internal;
+using OpenQA.Selenium.Appium.MultiTouch;
+using OpenQA.Selenium.Appium.Interfaces;
 
 namespace AppiumAndroidWindows
 {
@@ -66,7 +69,7 @@ namespace AppiumAndroidWindows
         [TestMethod]
         public void PerformActionsButtons()
         {
-            By byScrollLocator = new ByAndroidUIAutomator("new UiSelector().text(\"Views\");");
+            By byScrollLocator = new ByAndroidUIAutomator($"new UiScrollable(new UiSelector()).ScrollIntoView(new UiSelector().text(\"Views\"));)");
             var viewsButton = _driver.FindElement(byScrollLocator);
             viewsButton.Click();
 
@@ -146,6 +149,26 @@ namespace AppiumAndroidWindows
             var dropdownValue = _driver.FindElementById("android:id/text1");
             Assert.AreEqual("Earth", dropdownValue.Text);
         }
+
+        [TestMethod]
+        public void DragAndDropItOverAnotherDot()
+        {
+            NavigateToDragAndDrop();
+            var dragFromDot = _driver.FindElementById("com.example.android.apis:id/drag_dot_1");
+            var dropOverDot = _driver.FindElementById("com.example.android.apis:id/drag_dot_2");
+            ITouchAction actions = new TouchAction(_driver);    
+            actions.LongPress(dragFromDot).MoveTo(dropOverDot).Release().Perform();
+            //not implemented
+        }
+
+        [TestMethod]
+        public void RotateTheDeviceHorizontally_AndTurnOffWiFi()
+        {
+            //rotate the device
+            var rotatable = (IRotatable)_driver;
+            rotatable.Orientation = ScreenOrientation.Landscape;
+            _driver.ToggleWifi();
+        }
         private void NavigateToLigthThemeControl()
         {
             By byScrollLocator = new ByAndroidUIAutomator("new UiSelector().text(\"Views\");");
@@ -157,6 +180,16 @@ namespace AppiumAndroidWindows
 
             var lightThemeButton = _driver.FindElementByXPath("//*[@text='1. Light Theme']");
             lightThemeButton.Click();
+        }
+
+        private void NavigateToDragAndDrop()
+        {
+            By byScrollLocator = new ByAndroidUIAutomator("new UiSelector().text(\"Views\");");
+            var viewsButton = _driver.FindElement(byScrollLocator);
+            viewsButton.Click();
+
+            var controlsViewButton = _driver.FindElementByXPath("//*[@text='Drag and Drop']");
+            controlsViewButton.Click();
         }
     }
 }
